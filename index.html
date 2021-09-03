@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tutorial</title>
+    <style type="text/css">
+    body, html{
+        margin: 0px 0px;
+        background-color: rgb(186, 187, 194);
+    }
+    .mainContainer{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .mainContainer .tblProfile{
+        width: 100%;
+        padding: 20px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: #f2f2f2;
+    }
+    .mainContainer .tblProfile{
+       margin-top: 100px;
+    }
+    .mainContainer .tblProfile tbody tr td{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .mainContainer .tblProfile tbody tr td:first-child{
+        width: 40%;
+    }
+    .mainContainer .tblProfile tbody tr td:last-child{
+        width: 60%;
+    }
+    .mainContainer .tblProfile input[type=text]
+    {
+        width: 100%;
+        padding: 4px;
+    }
+    
+    .mainContainer .tblProfile textarea
+    {
+        width: 100%;
+        height: 150px;
+         padding: 4px;
+    }
+    .mainContainer .tblProfile input[type=submit],.mainContainer .tblProfile input[type=reset]
+    {
+         padding: 6px 12px;
+         background-color: rgb(116, 118, 255);
+         border: 1px solid #ccc;
+    }
+    </style>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <div class="mainContainer">
+        <table class="tblProfile">
+            <thead>
+                <tr>
+                    <th colspan="2">Form</th>
+                </tr>
+            </thead>
+            <tbody>
+               <form action="/index4.html" id="frmProfile" class="frmProfile" name="frmProfile" method="POST">
+                <tr>
+                    <td><label for="txtName">Name</label></td>
+                    <td><input type="text" name="txtName" id="txtName" class="txtName"/></td>
+                </tr>
+                <tr>
+                    <td><label for="txtAddress">Address</label></td>
+                    <td><input type="text" name="txtAddress" id="txtAddress" class="txtAddress"/></td>
+                </tr>
+                <tr>
+                    <td><label for="rdbHighestQualification">Highest Qualification</label></td>
+                    <td>
+                        <input type="radio" name="rdbHighestQualification" id="rdbHighestQualification"/>&nbsp; 10<sup>th</sup>
+                        <br/>
+                        <input type="radio" name="rdbHighestQualification" id="rdbHighestQualification"/>&nbsp; 12<sup>th</sup>
+                        <br/>
+                        <input type="radio" name="rdbHighestQualification" id="rdbHighestQualification"/>&nbsp; UG
+                        <br/>
+                        <input type="radio" name="rdbHighestQualification" id="rdbHighestQualification"/>&nbsp; PG
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ddlMaritalStatus">Marital Status</label></td>
+                    <td><select name="" id="ddlMaritalStatus" class="ddlMaritalStatus">
+                        <option value="1">Married</option>
+                        <option value="2">Un Married</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="fudResume">Upload Resume</label></td>
+                    <td><input type="file" name="fudResume" id="fudResume"></td>
+                </tr>
+                <tr>
+                    <td><label for="chbAgree">Agree</label></td>
+                    <td><input type="checkbox" name="chbAgree" id="chbAgree"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit"/>
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+               </form>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
